@@ -1,0 +1,15 @@
+What is this?
+
+Checking CVS' availability for COVID vaccines is a mess.  It currently changes every few minutes, and getting my father-in-law an appointment was difficult.  By the time we saw an availability, it would be gone by the time he got to check it, and checking a list of all available cities that they could reasonably drive to was time-consuming.  With a little bit of scripting, I simplified the process.
+
+Once you fill out the cities you want to check for, the script will email you when a vaccine is available in one of those cities.
+
+The script can be looped a customizable number of times, which is particularly useful if you only want to check a few cities, as you can start the script and walk away.
+
+How do I use this thing?
+
+1. Go to the Chrome Web Store and install Selenium (current link: https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
+2. Use Selenium IDE to open the file CVS_Covid_Vaccine.side.
+3. Edit secondCodedStep.js to include your information (email address and what target cities you want to check).
+4. Copy the script into Selenium IDE's second coded step (the "Target" field), then click the play button to run the test.
+5. If you want the script to run more than once, uncomment the "times" and "end" lines of the Selenium project, and set the number of times you want it to run.
