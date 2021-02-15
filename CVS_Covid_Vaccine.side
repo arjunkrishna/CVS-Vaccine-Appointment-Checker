@@ -1,0 +1,84 @@
+{
+  "id": "c15c220e-44ef-4693-8270-5b7022cc1f74",
+  "version": "2.0",
+  "name": "CVS_Covid_Vaccine",
+  "url": "https://www.cvs.com",
+  "tests": [{
+    "id": "8db82318-6c9e-4f6d-b611-61a415ded51a",
+    "name": "Check_Availability",
+    "commands": [{
+      "id": "d52c5484-0a22-415f-a20c-2bd2c1369d3e",
+      "comment": "",
+      "command": "//times",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3541ed9d-0ae2-48a7-ade2-6e8bcb0e8943",
+      "comment": "",
+      "command": "open",
+      "target": "immunizations/covid-19-vaccine?icid=cvs-home-hero1-banner-1-link2-coronavirus-vaccine",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "396984e1-652e-47fb-abe2-5c6e1da7f9ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1140",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37b18da9-cf18-4526-a0e0-87459854b862",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "5c3fce0b-7123-4675-92b6-c14945ddc117",
+      "comment": "",
+      "command": "runScript",
+      "target": "Array.from(document.getElementsByClassName(\"type__link__text modal--link modal--cta\")).forEach(function(a){     console.log(a);     if (a.getAttribute(\"data-analytics-name\") == \"California\")         a.click(); });",
+      "targets": [],
+      "value": "Click on state name to populate data"
+    }, {
+      "id": "0055aad7-3458-4cd4-8527-9bb9c148a3fe",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "9899c186-8212-4f44-bc8a-5712563d75aa",
+      "comment": "",
+      "command": "runScript",
+      "target": "var targets = [\"San Jose\", \"Auburn\", \"Alameda\", \"Berkeley\", \"Capitola\", \"Daly City\", \"Fremont\", \"Monterey\", \"Mountain View\", \"Oakland\", \"Palo Alto\", \"Redwood City\", \"San Francisco\", \"Santa Clara\"]; var available = []; var recipient = \"you@email.com\"; var subject = \"CVS Vaccine Appointment Available\"; var msg = \"Appointments available in: [\"; var stateCode = \".ca.json\";  Array.from(document.getElementsByClassName(\"covid-status tableFixHead\")).forEach(function(div){  \tif(div.getAttribute(\"data-url\").toLowerCase().indexOf(stateCode.toLowerCase()) > 1) { \t\tArray.from(div.children[0].children[1].children).forEach(function(tr) { \t\t\tif (tr.children[1].innerText != \"Fully Booked\") \t\t\t\tavailable.push(tr.children[0].innerText); \t\t\t}); \t\t} \t} );  var targetsAreAvailable = false; targets.forEach(function(t){     available.forEach(function(a){         if (a.indexOf(t) > -1) {             msg += a + \" | \"; \t\t\ttargetsAreAvailable = true; \t\t}     }); }); msg = msg.substr(0, msg.length - 3); msg += \"]\";  var url = \"https://willmaynard.com/sendEmail.php?\"; url += \"recipient=\" + encodeURIComponent(recipient); url += \"&subject=\" + encodeURIComponent(subject); url += \"&body=\" + encodeURIComponent(msg);  if (targetsAreAvailable)     window.location.href = url; else     console.log(\"No Appointments Available\");",
+      "targets": [],
+      "value": "Step 2: Find availability"
+    }, {
+      "id": "1d76d2ab-06c3-4985-8aa4-0ca88a56ac3d",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "f5cc4b22-afb8-47d3-9577-a2b759a90599",
+      "comment": "",
+      "command": "//end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b2444736-36c5-4b8d-81e9-e214e562aabc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8db82318-6c9e-4f6d-b611-61a415ded51a"]
+  }],
+  "urls": ["https://www.cvs.com/"],
+  "plugins": []
+}
