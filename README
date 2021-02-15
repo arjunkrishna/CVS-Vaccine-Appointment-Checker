@@ -6,9 +6,11 @@ Once you fill out the cities you want to check for, the script will email you wh
 
 The script can be looped a customizable number of times, which is particularly useful if you only want to check a few cities, as you can start the script and walk away.
 
+Please note that this script does not account for anyone's particular eligibility.
+
 How do I use this thing?
 
-1. Go to the Chrome Web Store and install Selenium (current link: https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
+1. Go to the Chrome Web Store and install Selenium (current link: https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd).
 2. Use Selenium IDE to open the file CVS_Covid_Vaccine.side.
 3. Edit secondCodedStep.js to include your information (email address and what target cities you want to check).
 4. Copy the script into Selenium IDE's second coded step (the "Target" field), then click the play button to run the test.
