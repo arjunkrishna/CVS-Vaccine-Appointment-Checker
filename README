@@ -15,3 +15,7 @@ How do I use this thing?
 3. Edit secondCodedStep.js to include your information (email address and what target cities you want to check).
 4. Copy the script into Selenium IDE's second coded step (the "Target" field), then click the play button to run the test.
 5. If you want the script to run more than once, uncomment the "times" and "end" lines of the Selenium project, and set the number of times you want it to run.
+
+added another test for yale new haven to fill the form to get to the scheduling page.
+
+in selenium ide... chose yalenewhaven and run the test.
