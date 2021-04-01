@@ -5,9 +5,9 @@
 
 	Copy and paste the code - not the comment - into Selenium.
 */
-var targets = ["San Jose", "Auburn", "Alameda", "Berkeley", "Capitola", "Daly City", "Fremont", "Monterey", "Mountain View", "Oakland", "Palo Alto", "Redwood City", "San Francisco", "Santa Clara"];
+var targets = ["Wilton", "Stamford", "Norwalk", "Ridgefield", "Darien"];
 var available = [];
-var recipient = "you@email.com";
+var recipient = "arjunkrishna@email.com";
 var subject = "CVS Vaccine Appointment Available";
 var msg = "Appointments available in: [";
 var stateCode = ".ca.json";

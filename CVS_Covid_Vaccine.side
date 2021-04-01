@@ -38,7 +38,7 @@
       "id": "5c3fce0b-7123-4675-92b6-c14945ddc117",
       "comment": "",
       "command": "runScript",
-      "target": "Array.from(document.getElementsByClassName(\"type__link__text modal--link modal--cta\")).forEach(function(a){     console.log(a);     if (a.getAttribute(\"data-analytics-name\") == \"California\")         a.click(); });",
+      "target": "Array.from(document.getElementsByClassName(\"type__link__text modal--link modal--cta\")).forEach(function(a){     console.log(a);     if (a.getAttribute(\"data-analytics-name\") == \"Connecticut\")         a.click(); });",
       "targets": [],
       "value": "Click on state name to populate data"
     }, {
@@ -52,7 +52,7 @@
       "id": "9899c186-8212-4f44-bc8a-5712563d75aa",
       "comment": "",
       "command": "runScript",
-      "target": "var targets = [\"San Jose\", \"Auburn\", \"Alameda\", \"Berkeley\", \"Capitola\", \"Daly City\", \"Fremont\", \"Monterey\", \"Mountain View\", \"Oakland\", \"Palo Alto\", \"Redwood City\", \"San Francisco\", \"Santa Clara\"]; var available = []; var recipient = \"you@email.com\"; var subject = \"CVS Vaccine Appointment Available\"; var msg = \"Appointments available in: [\"; var stateCode = \".ca.json\";  Array.from(document.getElementsByClassName(\"covid-status tableFixHead\")).forEach(function(div){  \tif(div.getAttribute(\"data-url\").toLowerCase().indexOf(stateCode.toLowerCase()) > 1) { \t\tArray.from(div.children[0].children[1].children).forEach(function(tr) { \t\t\tif (tr.children[1].innerText != \"Fully Booked\") \t\t\t\tavailable.push(tr.children[0].innerText); \t\t\t}); \t\t} \t} );  var targetsAreAvailable = false; targets.forEach(function(t){     available.forEach(function(a){         if (a.indexOf(t) > -1) {             msg += a + \" | \"; \t\t\ttargetsAreAvailable = true; \t\t}     }); }); msg = msg.substr(0, msg.length - 3); msg += \"]\";  var url = \"https://willmaynard.com/sendEmail.php?\"; url += \"recipient=\" + encodeURIComponent(recipient); url += \"&subject=\" + encodeURIComponent(subject); url += \"&body=\" + encodeURIComponent(msg);  if (targetsAreAvailable)     window.location.href = url; else     console.log(\"No Appointments Available\");",
+      "target": "var targets = [\"Wilton\", \"Stamford\", \"Norwalk\", \"Ridgefield\", \"Darien\"]; var available = []; var recipient = \"arjunkrishna@gmail.com\"; var subject = \"CVS Vaccine Appointment Available\"; var msg = \"Appointments available in: [\"; var stateCode = \".ct.json\";  Array.from(document.getElementsByClassName(\"covid-status tableFixHead\")).forEach(function(div){  \tif(div.getAttribute(\"data-url\").toLowerCase().indexOf(stateCode.toLowerCase()) > 1) { \t\tArray.from(div.children[0].children[1].children).forEach(function(tr) { \t\t\tif (tr.children[1].innerText != \"Fully Booked\") \t\t\t\tavailable.push(tr.children[0].innerText); \t\t\t}); \t\t} \t} );  var targetsAreAvailable = false; targets.forEach(function(t){     available.forEach(function(a){         if (a.indexOf(t) > -1) {             msg += a + \" | \"; \t\t\ttargetsAreAvailable = true; \t\t}     }); }); msg = msg.substr(0, msg.length - 3); msg += \"]\";  var url = \"https://willmaynard.com/sendEmail.php?\"; url += \"recipient=\" + encodeURIComponent(recipient); url += \"&subject=\" + encodeURIComponent(subject); url += \"&body=\" + encodeURIComponent(msg);  if (targetsAreAvailable)     window.location.href = url; else     console.log(\"No Appointments Available\");",
       "targets": [],
       "value": "Step 2: Find availability"
     }, {
