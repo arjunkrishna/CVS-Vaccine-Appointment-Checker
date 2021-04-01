@@ -18,4 +18,8 @@ How do I use this thing?
 
 added another test for yale new haven to fill the form to get to the scheduling page.
 
-in selenium ide... chose yalenewhaven and run the test.
+in selenium ide... choose yalenewhaven and run the test.
+
+added stamford health as well
+
+in selenium ide... choose stamfordhealth and run the test.

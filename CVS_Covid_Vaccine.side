@@ -52,7 +52,7 @@
       "id": "9899c186-8212-4f44-bc8a-5712563d75aa",
       "comment": "",
       "command": "runScript",
-      "target": "var targets = [\"Wilton\", \"Stamford\", \"Norwalk\", \"Ridgefield\", \"Darien\"]; var available = []; var recipient = \"youremail@gmail.com\"; var subject = \"CVS Vaccine Appointment Available\"; var msg = \"Appointments available in: [\"; var stateCode = \".ca.json\";  Array.from(document.getElementsByClassName(\"covid-status tableFixHead\")).forEach(function(div){  \tif(div.getAttribute(\"data-url\").toLowerCase().indexOf(stateCode.toLowerCase()) > 1) { \t\tArray.from(div.children[0].children[1].children).forEach(function(tr) { \t\t\tif (tr.children[1].innerText != \"Fully Booked\") \t\t\t\tavailable.push(tr.children[0].innerText); \t\t\t}); \t\t} \t} );  var targetsAreAvailable = false; targets.forEach(function(t){     available.forEach(function(a){         if (a.indexOf(t) > -1) {             msg += a + \" | \"; \t\t\ttargetsAreAvailable = true; \t\t}     }); }); msg = msg.substr(0, msg.length - 3); msg += \"]\";  var url = \"https://willmaynard.com/sendEmail.php?\"; url += \"recipient=\" + encodeURIComponent(recipient); url += \"&subject=\" + encodeURIComponent(subject); url += \"&body=\" + encodeURIComponent(msg);  if (targetsAreAvailable)     window.location.href = url; else     console.log(\"No Appointments Available\");",
+      "target": "var targets = [\"Wilton\", \"Stamford\", \"Norwalk\", \"Ridgefield\", \"Darien\"]; var available = []; var recipient = \"arjunkrishna@email.com\"; var subject = \"CVS Vaccine Appointment Available\"; var msg = \"Appointments available in: [\"; var stateCode = \".ca.json\";  Array.from(document.getElementsByClassName(\"covid-status tableFixHead\")).forEach(function(div){  \tif(div.getAttribute(\"data-url\").toLowerCase().indexOf(stateCode.toLowerCase()) > 1) { \t\tArray.from(div.children[0].children[1].children).forEach(function(tr) { \t\t\tif (tr.children[1].innerText != \"Fully Booked\") \t\t\t\tavailable.push(tr.children[0].innerText); \t\t\t}); \t\t} \t} );  var targetsAreAvailable = false; targets.forEach(function(t){     available.forEach(function(a){         if (a.indexOf(t) > -1) {             msg += a + \" | \"; \t\t\ttargetsAreAvailable = true; \t\t}     }); }); msg = msg.substr(0, msg.length - 3); msg += \"]\";  var url = \"https://willmaynard.com/sendEmail.php?\"; url += \"recipient=\" + encodeURIComponent(recipient); url += \"&subject=\" + encodeURIComponent(subject); url += \"&body=\" + encodeURIComponent(msg);  if (targetsAreAvailable)     window.location.href = url; else     console.log(\"No Appointments Available\");",
       "targets": [],
       "value": "Step 2: Find availability"
     }, {
@@ -238,6 +238,174 @@
       "comment": "",
       "command": "//end",
       "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fbb75840-9734-49a4-b568-e2bb02ac476c",
+    "name": "stamfordhealth",
+    "commands": [{
+      "id": "64b4c644-a32d-4f58-b882-9cc7a75f4f0e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.zocdoc.com/wl/stamfordcovid19vaccination/practice/64220?reason_visit=5243",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e00f554f-77f4-41ce-8f3e-68486764a373",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1170",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d22003c7-b300-4bfd-873f-70c255301e6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"modal-secondary-button\"]",
+      "targets": [
+        ["css=*[data-test=\"modal-secondary-button\"]", "css:data-attr"],
+        ["linkText=Check your eligibility", "linkText"],
+        ["css=.ekryfU", "css:finder"],
+        ["xpath=//a[contains(text(),'Check your eligibility')]", "xpath:link"],
+        ["xpath=//div[@id='modal-root']/div/div/div[2]/div/div/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vaccine/screener?directoryId=1137')]", "xpath:href"],
+        ["xpath=//div/div/span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Check your eligibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cdfeef4-eb15-4072-b69e-45bfb84afa0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"age-input\"]",
+      "targets": [
+        ["css=*[data-test=\"age-input\"]", "css:data-attr"],
+        ["id=age-input", "id"],
+        ["name=age", "name"],
+        ["css=#age-input", "css:finder"],
+        ["xpath=//input[@id='age-input']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "553f6fff-4c81-4507-a92a-1cb3493c8278",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"age-input\"]",
+      "targets": [
+        ["css=*[data-test=\"age-input\"]", "css:data-attr"],
+        ["id=age-input", "id"],
+        ["name=age", "name"],
+        ["css=#age-input", "css:finder"],
+        ["xpath=//input[@id='age-input']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "43"
+    }, {
+      "id": "e6f45006-85fc-415e-b1e3-1d9fdcafde7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"next-button\"]",
+      "targets": [
+        ["css=*[data-test=\"next-button\"]", "css:data-attr"],
+        ["css=.eKdrFy > .yglqz4-2", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce6118ce-5431-4e89-a512-e3a8aef11813",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(2) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(2) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='anaphylaxis'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c587984-4296-4461-b53e-35fe23d0b07e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(3) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(3) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='antibody'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[2]/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div[2]/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcb430ea-b041-469a-a3bc-84a2cb1bdaaa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(4) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(4) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='recentVaccination'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[3]/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div[3]/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd43ddcc-b18a-47b7-bb7e-470edb89f954",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-11:nth-child(5) div:nth-child(2) > .sc-127g0g0-1",
+      "targets": [
+        ["css=.etfe1f-11:nth-child(5) div:nth-child(2) > .sc-127g0g0-1", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[4]/div[2]/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2634d981-cb2b-4c89-9d48-f879f28624e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"next-button\"]",
+      "targets": [
+        ["css=*[data-test=\"next-button\"]", "css:data-attr"],
+        ["css=.yglqz4-2:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/button", "xpath:idRelative"],
+        ["xpath=//div[14]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5c17175-0511-4706-892a-68de2ab84511",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"see-availability-button\"]",
+      "targets": [
+        ["css=*[data-test=\"see-availability-button\"]", "css:data-attr"],
+        ["css=.yglqz4-2:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[16]/button", "xpath:idRelative"],
+        ["xpath=//div[16]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'See availability')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c21323fc-4d97-49da-9229-d0764f201b4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1",
+      "targets": [
+        ["css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1", "css:finder"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/div/div/article/section/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06335f27-9fdd-44d5-aecf-43cd022a856b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,81)",
       "targets": [],
       "value": ""
     }]
