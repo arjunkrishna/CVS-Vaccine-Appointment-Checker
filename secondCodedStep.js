@@ -5,7 +5,7 @@
 
 	Copy and paste the code - not the comment - into Selenium.
 */
-var targets = ["Wilton", "Stamford", "Norwalk", "Ridgefield", "Darien"];
+var targets = ["Wilton", "Stamford", "Norwalk", "Ridgefield", "Darien", "Old Greenwich"];
 var available = [];
 var recipient = "arjunkrishna@email.com";
 var subject = "CVS Vaccine Appointment Available";

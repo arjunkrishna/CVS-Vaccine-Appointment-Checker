@@ -9,7 +9,7 @@
     "commands": [{
       "id": "d52c5484-0a22-415f-a20c-2bd2c1369d3e",
       "comment": "",
-      "command": "//times",
+      "command": "times",
       "target": "2000",
       "targets": [],
       "value": ""
@@ -52,7 +52,7 @@
       "id": "9899c186-8212-4f44-bc8a-5712563d75aa",
       "comment": "",
       "command": "runScript",
-      "target": "var targets = [\"Wilton\", \"Stamford\", \"Norwalk\", \"Ridgefield\", \"Darien\"]; var available = []; var recipient = \"arjunkrishna@gmail.com\"; var subject = \"CVS Vaccine Appointment Available\"; var msg = \"Appointments available in: [\"; var stateCode = \".ct.json\";  Array.from(document.getElementsByClassName(\"covid-status tableFixHead\")).forEach(function(div){  \tif(div.getAttribute(\"data-url\").toLowerCase().indexOf(stateCode.toLowerCase()) > 1) { \t\tArray.from(div.children[0].children[1].children).forEach(function(tr) { \t\t\tif (tr.children[1].innerText != \"Fully Booked\") \t\t\t\tavailable.push(tr.children[0].innerText); \t\t\t}); \t\t} \t} );  var targetsAreAvailable = false; targets.forEach(function(t){     available.forEach(function(a){         if (a.indexOf(t) > -1) {             msg += a + \" | \"; \t\t\ttargetsAreAvailable = true; \t\t}     }); }); msg = msg.substr(0, msg.length - 3); msg += \"]\";  var url = \"https://willmaynard.com/sendEmail.php?\"; url += \"recipient=\" + encodeURIComponent(recipient); url += \"&subject=\" + encodeURIComponent(subject); url += \"&body=\" + encodeURIComponent(msg);  if (targetsAreAvailable)     window.location.href = url; else     console.log(\"No Appointments Available\");",
+      "target": "var targets = [\"Wilton\", \"Stamford\", \"Norwalk\", \"Ridgefield\", \"Darien\"]; var available = []; var recipient = \"arjunkrishna@email.com\"; var subject = \"CVS Vaccine Appointment Available\"; var msg = \"Appointments available in: [\"; var stateCode = \".ca.json\";  Array.from(document.getElementsByClassName(\"covid-status tableFixHead\")).forEach(function(div){  \tif(div.getAttribute(\"data-url\").toLowerCase().indexOf(stateCode.toLowerCase()) > 1) { \t\tArray.from(div.children[0].children[1].children).forEach(function(tr) { \t\t\tif (tr.children[1].innerText != \"Fully Booked\") \t\t\t\tavailable.push(tr.children[0].innerText); \t\t\t}); \t\t} \t} );  var targetsAreAvailable = false; targets.forEach(function(t){     available.forEach(function(a){         if (a.indexOf(t) > -1) {             msg += a + \" | \"; \t\t\ttargetsAreAvailable = true; \t\t}     }); }); msg = msg.substr(0, msg.length - 3); msg += \"]\";  var url = \"https://willmaynard.com/sendEmail.php?\"; url += \"recipient=\" + encodeURIComponent(recipient); url += \"&subject=\" + encodeURIComponent(subject); url += \"&body=\" + encodeURIComponent(msg);  if (targetsAreAvailable)     window.location.href = url; else     console.log(\"No Appointments Available\");",
       "targets": [],
       "value": "Step 2: Find availability"
     }, {
@@ -65,7 +65,7 @@
     }, {
       "id": "f5cc4b22-afb8-47d3-9577-a2b759a90599",
       "comment": "",
-      "command": "//end",
+      "command": "end",
       "target": "",
       "targets": [],
       "value": ""
