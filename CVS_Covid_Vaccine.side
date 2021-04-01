@@ -2,7 +2,7 @@
   "id": "c15c220e-44ef-4693-8270-5b7022cc1f74",
   "version": "2.0",
   "name": "CVS_Covid_Vaccine",
-  "url": "https://www.cvs.com",
+  "url": "https://www.cvs.com/",
   "tests": [{
     "id": "8db82318-6c9e-4f6d-b611-61a415ded51a",
     "name": "Check_Availability",
@@ -248,7 +248,7 @@
       "id": "64b4c644-a32d-4f58-b882-9cc7a75f4f0e",
       "comment": "",
       "command": "open",
-      "target": "https://www.zocdoc.com/wl/stamfordcovid19vaccination/practice/64220?reason_visit=5243",
+      "target": "https://www.zocdoc.com/wl/stamfordcovid19vaccination/patientvaccine",
       "targets": [],
       "value": ""
     }, {
@@ -405,8 +405,387 @@
       "id": "06335f27-9fdd-44d5-aecf-43cd022a856b",
       "comment": "",
       "command": "runScript",
-      "target": "window.scrollTo(0,81)",
+      "target": "window.scrollTo(0,400)",
       "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f2b39fd4-d2d0-4caa-972c-831d8beed621",
+    "name": "stamford-firefox",
+    "commands": [{
+      "id": "8048fc3c-5083-4cda-8d65-ae427e6da3fd",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.zocdoc.com/wl/stamfordcovid19vaccination/practice/64220?reason_visit=5243",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9cdfcad-6d28-4dda-9b27-839c0ca97528",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "862x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97524a72-2dda-411b-96b1-efe227dbd7b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"modal-secondary-button\"]",
+      "targets": [
+        ["css=*[data-test=\"modal-secondary-button\"]", "css:data-attr"],
+        ["linkText=Get started", "linkText"],
+        ["css=.fKywNi", "css:finder"],
+        ["xpath=//a[contains(text(),'Get started')]", "xpath:link"],
+        ["xpath=//div[@id='modal-root']/div/div/div[2]/div/div/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vaccine/screener?directoryId=1137')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eff19d8-6162-43e4-8e13-9da7f2412ccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"age-input\"]",
+      "targets": [
+        ["css=*[data-test=\"age-input\"]", "css:data-attr"],
+        ["id=age-input", "id"],
+        ["name=age", "name"],
+        ["css=#age-input", "css:finder"],
+        ["xpath=//input[@id='age-input']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c22f7ee8-e53d-4d25-8f82-4e17f1b07c26",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"age-input\"]",
+      "targets": [
+        ["css=*[data-test=\"age-input\"]", "css:data-attr"],
+        ["id=age-input", "id"],
+        ["name=age", "name"],
+        ["css=#age-input", "css:finder"],
+        ["xpath=//input[@id='age-input']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "43"
+    }, {
+      "id": "8d5e91c3-558f-4955-a984-072e88020aac",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"next-button\"]",
+      "targets": [
+        ["css=*[data-test=\"next-button\"]", "css:data-attr"],
+        ["css=.eKdrFy > .yglqz4-2", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5827ab99-efe8-4714-9566-167aa052abe8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(2) > .sc-127g0g0-0 > div:nth-child(2) svg",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(2) > .sc-127g0g0-0 > div:nth-child(2) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ce78bc-bef9-4142-965c-dd9bc7bd629b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(3) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(3) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='antibody'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[2]/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div[2]/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a06359e-7e35-4455-b3a8-dff687053168",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(4) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(4) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='recentVaccination'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[3]/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div[3]/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c773574-21fb-477c-a326-0be3e434d5a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-11:nth-child(5) div:nth-child(2) > .sc-127g0g0-1",
+      "targets": [
+        ["css=.etfe1f-11:nth-child(5) div:nth-child(2) > .sc-127g0g0-1", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[4]/div[2]/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36904c31-1796-4609-9a9a-72a48b84d15e",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"next-button\"]",
+      "targets": [
+        ["css=*[data-test=\"next-button\"]", "css:data-attr"],
+        ["css=.yglqz4-2:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/button", "xpath:idRelative"],
+        ["xpath=//div[14]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d1f9f9c-60e8-43a7-81bc-cd35aae0d5c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"see-availability-button\"]",
+      "targets": [
+        ["css=*[data-test=\"see-availability-button\"]", "css:data-attr"],
+        ["css=.yglqz4-2:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[16]/button", "xpath:idRelative"],
+        ["xpath=//div[16]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'See availability')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c4bd4c5-0c4c-4a0b-b200-1e507d307657",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,60)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0af56049-f51d-4dc3-a5d0-58a52dfb1ae9",
+    "name": "teststm",
+    "commands": [{
+      "id": "12a9b3fd-987f-4ece-aef7-29c0ce1f535d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.zocdoc.com/wl/stamfordcovid19vaccination/practice/64220?reason_visit=5243",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f934de43-4eb4-4e51-9d0b-6d1e41b8948e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1186",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb40599f-4cf0-4225-a79c-5b04513dc0ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"modal-secondary-button\"]",
+      "targets": [
+        ["css=*[data-test=\"modal-secondary-button\"]", "css:data-attr"],
+        ["linkText=Check your eligibility", "linkText"],
+        ["css=.ekryfU", "css:finder"],
+        ["xpath=//a[contains(text(),'Check your eligibility')]", "xpath:link"],
+        ["xpath=//div[@id='modal-root']/div/div/div[2]/div/div/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vaccine/screener?directoryId=1137')]", "xpath:href"],
+        ["xpath=//div/div/span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Check your eligibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa108b0c-7290-4911-b118-a06c60b2e2e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"age-input\"]",
+      "targets": [
+        ["css=*[data-test=\"age-input\"]", "css:data-attr"],
+        ["id=age-input", "id"],
+        ["name=age", "name"],
+        ["css=#age-input", "css:finder"],
+        ["xpath=//input[@id='age-input']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0f283ce-402d-4836-8ce9-612b85a12ce0",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"age-input\"]",
+      "targets": [
+        ["css=*[data-test=\"age-input\"]", "css:data-attr"],
+        ["id=age-input", "id"],
+        ["name=age", "name"],
+        ["css=#age-input", "css:finder"],
+        ["xpath=//input[@id='age-input']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "43"
+    }, {
+      "id": "a1f69601-b8a5-41ea-acca-2ebd5e4cc33d",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"next-button\"]",
+      "targets": [
+        ["css=*[data-test=\"next-button\"]", "css:data-attr"],
+        ["css=.eKdrFy > .yglqz4-2", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c18a0426-ed8d-417c-8082-9223a69c534e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(2) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(2) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='anaphylaxis'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "376e2e24-bc29-41f3-b749-99222d0f945d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(3) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(3) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='antibody'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[2]/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div[2]/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d640acc-8fde-4e52-85e5-bc626800911c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(4) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-14:nth-child(14) > .etfe1f-11:nth-child(4) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='recentVaccination'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[3]/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div[3]/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "538add6b-5e76-4882-bfe9-25b83ee06c5a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.etfe1f-11:nth-child(5) > .sc-127g0g0-0 > div:nth-child(2) input",
+      "targets": [
+        ["css=.etfe1f-11:nth-child(5) > .sc-127g0g0-0 > div:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='recentDiagnosis'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/div[4]/div[2]/div[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1679a707-92f7-4351-9484-94e104c46091",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"next-button\"]",
+      "targets": [
+        ["css=*[data-test=\"next-button\"]", "css:data-attr"],
+        ["css=.yglqz4-2:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[14]/button", "xpath:idRelative"],
+        ["xpath=//div[14]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce97f0d4-10d4-408d-a430-d6af174cac03",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"see-availability-button\"]",
+      "targets": [
+        ["css=*[data-test=\"see-availability-button\"]", "css:data-attr"],
+        ["css=.yglqz4-2:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div[3]/div/div[16]/button", "xpath:idRelative"],
+        ["xpath=//div[16]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'See availability')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fc0abd6-5ba6-4947-a654-25a2b5a90d98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1",
+      "targets": [
+        ["css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1", "css:finder"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/div/div/article/section/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bcde025-b417-4f93-a505-86a50fd3ed83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1",
+      "targets": [
+        ["css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1", "css:finder"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/div/div/article/section/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc2d97c9-430d-45bd-8af9-7591629881c4",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1",
+      "targets": [
+        ["css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1", "css:finder"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/div/div/article/section/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dce2e97f-18ed-42fc-9d1c-d5136718739c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1",
+      "targets": [
+        ["css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1", "css:finder"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/div/div/article/section/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bc800a2-d571-4a75-aea0-cabeeb8bcf9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"icon-arrow-right\"]",
+      "targets": [
+        ["css=*[data-test=\"icon-arrow-right\"]", "css:data-attr"],
+        ["css=.bzpiqM > .hbUeDq", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a27541b-2912-451f-818e-b0bdfc8cf08e",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"icon-arrow-right\"]",
+      "targets": [
+        ["css=*[data-test=\"icon-arrow-right\"]", "css:data-attr"],
+        ["css=.bzpiqM > .hbUeDq", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cdb98be-de3c-4b25-8e40-5dc256eaf247",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"icon-arrow-right\"]",
+      "targets": [
+        ["css=*[data-test=\"icon-arrow-right\"]", "css:data-attr"],
+        ["css=.bzpiqM > .hbUeDq", "css:finder"]
+      ],
       "value": ""
     }]
   }],
