@@ -7,7 +7,7 @@
 */
 var targets = ["Wilton", "Stamford", "Norwalk", "Ridgefield", "Darien", "Old Greenwich"];
 var available = [];
-var recipient = "arjunkrishna@email.com";
+var recipient = "youremail@gmail.com";
 var subject = "CVS Vaccine Appointment Available";
 var msg = "Appointments available in: [";
 var stateCode = ".ca.json";
