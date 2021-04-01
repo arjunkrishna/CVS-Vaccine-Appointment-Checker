@@ -70,6 +70,177 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "c6ca976f-3914-4ff5-8c2d-6e0ab2822b31",
+    "name": "yalenewhaven",
+    "commands": [{
+      "id": "2ead5819-8c4c-4f2f-8987-ae862bd68da7",
+      "comment": "",
+      "command": "//times",
+      "target": "",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "8b758841-d092-4b3a-a80f-58c05bf9951c",
+      "comment": "",
+      "command": "open",
+      "target": "https://covidvaccine.ynhh.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "264232e4-9042-48f8-9333-27c83aca30e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1170",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d78203c8-245c-480e-a49a-b46434d5ef9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radio_grp_set > .jsx-2085888330:nth-child(3)",
+      "targets": [
+        ["css=.radio_grp_set > .jsx-2085888330:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/fieldset/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Someone who is currently 18 years of age or older')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c0691a-184b-408c-8e88-181c7ac01241",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(3)",
+      "targets": [
+        ["css=label:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/fieldset/div/div/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Agree')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef2f2f52-92cf-43b2-a86f-2e8e20a35ff4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radio_grp_set > .jsx-2085888330:nth-child(2)",
+      "targets": [
+        ["css=.radio_grp_set > .jsx-2085888330:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/fieldset/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'I or the person I am scheduling on behalf of DO NOT have any of the high risk conditions listed below.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e41bfdf-2c67-4c6c-8d58-49f7c61f8521",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(3)",
+      "targets": [
+        ["css=label:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/fieldset/div/div/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Acknowledge')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4080bb50-7972-42d5-93eb-fd712d86311c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)",
+      "targets": [
+        ["css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/div/fieldset/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94f08b02-05d1-43f3-bf08-853cf07cae57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)",
+      "targets": [
+        ["css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/div/fieldset/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfc263af-38ea-43c5-b025-64a5ff4febec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)",
+      "targets": [
+        ["css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/div/fieldset/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "536b75c8-5908-4193-b05f-e18a592db13f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radio_row_item:nth-child(2) > .jsx-2085888330:nth-child(2)",
+      "targets": [
+        ["css=.radio_row_item:nth-child(2) > .jsx-2085888330:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/div/fieldset/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Yes, and I wish to be vaccinated')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "276cf4a5-8486-43ee-82af-b64ef012f254",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radio_row_item:nth-child(2) > .jsx-2085888330:nth-child(2)",
+      "targets": [
+        ["css=.radio_row_item:nth-child(2) > .jsx-2085888330:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/div/fieldset/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Yes, and I wish to be vaccinated')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62942143-d950-473c-9f31-fa5715a7a9f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)",
+      "targets": [
+        ["css=.jsx-2085888330:nth-child(3) > .jsx-2085888330:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/div/fieldset/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e98973e-9f48-4908-807b-8d8b67ed0758",
+      "comment": "",
+      "command": "click",
+      "target": "css=.VaccinationScheduleConsent_none_label_or__1sQzM:nth-child(3)",
+      "targets": [
+        ["css=.VaccinationScheduleConsent_none_label_or__1sQzM:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div[2]/div/div/div/fieldset/div/div/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Acknowledge')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d2be275-2ca4-4855-a151-b0cac562db5e",
+      "comment": "",
+      "command": "//pause",
+      "target": "",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "201750d9-587d-40c2-bdeb-b33be14bc016",
+      "comment": "",
+      "command": "//end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "b2444736-36c5-4b8d-81e9-e214e562aabc",
