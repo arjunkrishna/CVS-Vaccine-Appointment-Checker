@@ -6,6 +6,6 @@
 */
 
 Array.from(document.getElementsByClassName("type__link__text modal--link modal--cta")).forEach(function(a){
-	if (a.getAttribute("data-analytics-name") == "California")
+	if (a.getAttribute("data-analytics-name") == "Connecticut")
 		a.click();
 });
