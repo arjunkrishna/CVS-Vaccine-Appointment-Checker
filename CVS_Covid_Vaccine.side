@@ -567,6 +567,13 @@
     "id": "0af56049-f51d-4dc3-a5d0-58a52dfb1ae9",
     "name": "teststm",
     "commands": [{
+      "id": "abb89dda-1958-43e8-b6ef-7ddabfaa9194",
+      "comment": "",
+      "command": "times",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "12a9b3fd-987f-4ece-aef7-29c0ce1f535d",
       "comment": "",
       "command": "open",
@@ -749,43 +756,173 @@
     }, {
       "id": "dce2e97f-18ed-42fc-9d1c-d5136718739c",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1",
-      "targets": [
-        ["css=.sc-18lueyt-1:nth-child(1) .sc-1tiewj-1", "css:finder"],
-        ["xpath=//div[@id='main']/div/main/div/div/div/div/div/article/section/div/div[2]/div/div/div[2]", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "9bc800a2-d571-4a75-aea0-cabeeb8bcf9f",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=*[data-test=\"icon-arrow-right\"]",
-      "targets": [
-        ["css=*[data-test=\"icon-arrow-right\"]", "css:data-attr"],
-        ["css=.bzpiqM > .hbUeDq", "css:finder"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "8a27541b-2912-451f-818e-b0bdfc8cf08e",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=*[data-test=\"icon-arrow-right\"]",
-      "targets": [
-        ["css=*[data-test=\"icon-arrow-right\"]", "css:data-attr"],
-        ["css=.bzpiqM > .hbUeDq", "css:finder"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "3cdb98be-de3c-4b25-8e40-5dc256eaf247",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=*[data-test=\"icon-arrow-right\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1597321-85c1-4c11-ab78-203efaee6651",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,400)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e121fe94-3f66-42e5-a347-b872d3ee8c0d",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74d5fa9e-6912-4ac1-b879-efa426d87002",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "98cab41a-c977-4728-b6ac-7e24cce6e68a",
+    "name": "refresh",
+    "commands": [{
+      "id": "46636668-705e-4022-92f9-dae32040df3c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.zocdoc.com/wl/stamfordcovid19vaccination/practice/64220?reason_visit=5243",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d7b0663-32f7-4c1f-bc81-7711669dce78",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1170",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4518b70-b915-4bfe-8306-77e610f34bcd",
+      "comment": "",
+      "command": "times",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d88cb87-88da-4753-8e2e-063f321598e1",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d55ae2b-68e4-45c0-8fb1-290aeef950e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"modal-primary-button\"]",
       "targets": [
-        ["css=*[data-test=\"icon-arrow-right\"]", "css:data-attr"],
-        ["css=.bzpiqM > .hbUeDq", "css:finder"]
+        ["css=*[data-test=\"modal-primary-button\"]", "css:data-attr"],
+        ["css=.fKywNi", "css:finder"],
+        ["xpath=//div[@id='modal-root']/div/div/div[2]/div/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "d633e7b8-73d4-457d-8e5d-3deddf560c80",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,400)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0c519bb-f693-40ea-9d6d-9ca8aafc2dbf",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "css=*[data-test=\"timesgrid-timeslot\"]",
+      "targets": [],
+      "value": "error"
+    }, {
+      "id": "842722af-552d-49af-8a3d-47b1b7879f31",
+      "comment": "",
+      "command": "echo",
+      "target": "error ${error}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77954474-deef-458d-9e4d-03e4de8b18d4",
+      "comment": "",
+      "command": "if",
+      "target": "${error} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2217a610-d491-48fb-82a5-00815c97f5d4",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=*[data-test=\"timesgrid-timeslot\"]",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "ba4ce582-59ad-4e71-baee-43fb1ccd7d15",
+      "comment": "",
+      "command": "//click",
+      "target": "[css=*[data-test=\"timesgrid-timeslot\"]](0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f5d9c19-4cc5-46d8-9ed0-671e93112f81",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"timesgrid-timeslot\"]:nth-of-type(1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "904606c0-2927-4c65-8246-999d7b79dd9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"book-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d426543-5f5e-4ff5-ad2b-97a21f2b6919",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c0101f7-4d6e-4a15-b311-52b5606b0834",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07f9ffa7-2a86-4c51-8403-b52095629e42",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }],
